@@ -42,3 +42,30 @@
 >> lines = f.readlines()    # read entire file in a list
 >> f.close()
 
+# regular expression
+>> import re
+>> match = re.search('ig', 'called piiig')  # search
+>> if match: print match.group()
+# . (dot) any char
+# \w word char
+# \d digit
+# \s whitespace
+# \S non-whitespace
+# + 1 or more
+# * 0 or more
+>> re.findall(r'[\w.]+@[\w.]+', 'blah nick.p@gmail.com ya foo@bar')     # returns a list
+>> re.findall(r'([\w.]+)@([\w.]+)', 'blah nick.p@gmail.com ya foo@bar') # a list of tuples
+
+# system
+# os module
+>> os.listdir('.')                      # return list of strings
+>> os.path.join(directory, filename)
+>> os.path.abspath(filepath)
+>> os.path.dirname(path)                # return the directory name
+>> os.path.basename(path)               # return the file name
+>> os.path.exists(filename)
+>> os.mkdir(dir_path)
+>> shutil.copy(src_path, dir_path)
+# commands module
+>> (status, output) = commands.getstatusoutput(cmd)
+
