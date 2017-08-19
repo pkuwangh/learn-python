@@ -69,3 +69,12 @@
 # commands module
 >> (status, output) = commands.getstatusoutput(cmd)
 
+# exception
+>> try:
+>> except 'IO error':
+
+# url lib
+>> uf = urllib.open('http://google.com')    # similar to the file object
+>> uf.read()
+>> urllib.urlretrieve('http://google.com/intl/en_ALL/images/logo.gif', 'logo.gif')
+
